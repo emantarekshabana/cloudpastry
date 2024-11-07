@@ -25,7 +25,7 @@ class OnboardingScreen extends StatelessWidget {
               children: const [  
                   CurvesContainerWithImageAndText(),
                   GetStartedButton(),     
-                  CloudPastryInfoUrl(),
+            
               ],
             ),
           ),

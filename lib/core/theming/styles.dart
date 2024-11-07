@@ -26,7 +26,7 @@ class TextStyles {
   static TextStyle font13BlueSemiBold = TextStyle(
     fontSize: 13.sp,
     fontWeight: FontWeightHelper.semiBold,
-    color: ColorsManager.mainColor,
+    color: Colors.black,
       fontFamily: 'Siwa'
   );
 
@@ -46,11 +46,17 @@ class TextStyles {
   static TextStyle font24BlueBold = TextStyle(
     fontSize: 24.sp,
     fontWeight: FontWeightHelper.bold,
-    color: ColorsManager.mainColor,
+    color: Colors.black,
       fontFamily: 'Siwa'
   );
 
 
+  static TextStyle font20WhiteSemiBold = TextStyle(
+    fontSize: 20.sp,
+    fontWeight: FontWeightHelper.semiBold,
+    color: Colors.white,
+    fontFamily: 'Siwa'
+  );
   static TextStyle font16WhiteSemiBold = TextStyle(
     fontSize: 16.sp,
     fontWeight: FontWeightHelper.semiBold,

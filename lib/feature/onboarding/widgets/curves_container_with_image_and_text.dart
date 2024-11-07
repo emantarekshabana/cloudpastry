@@ -14,7 +14,7 @@ class CurvesContainerWithImageAndText extends StatelessWidget {
     return  Stack(
       children:  [
          Container(
-            height: MediaQuery.of(context).size.height * 0.75,
+            height: MediaQuery.of(context).size.height * 0.60,
             color: Colors.white,
           ),
         const Positioned(
