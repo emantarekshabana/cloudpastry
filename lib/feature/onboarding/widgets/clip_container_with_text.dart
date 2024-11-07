@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../core/theming/styles.dart';
-
-
 
 class ClipContainerWithText extends StatelessWidget {
   const ClipContainerWithText({super.key});
@@ -13,23 +10,25 @@ class ClipContainerWithText extends StatelessWidget {
     return ClipPath(
              clipper: BannerShapeClipper(),
             child: Container(
-              height: 250.h,
+              height: 80.h,
                width: MediaQuery.of(context).size.width,
               color: Colors.white,
-              child: Stack(
-                children:[ 
-                  Positioned(
-                      bottom: 40,
-                     child: SizedBox(
-                      width: MediaQuery.of(context).size.width,
-                       child: Text('منظومة متكاملة نغطي جوانب رئيسية للتجارة من بينها دراسة السوق، والتوقعات المستقبلية، وميزانيات العملاء، والتجارة الإلكترونية، وخدمات التوصيل',
-                              style: TextStyles.font12DarkBlueRegular,
-                              textAlign: TextAlign.center,
-                            ),
-                     ),
-                  ),
-            ] 
-             ), 
+              child: const Text(""),
+              
+            //   Stack(
+            //     children:[ 
+            //       Positioned(
+            //           bottom: 40,
+            //          child: SizedBox(
+            //           width: MediaQuery.of(context).size.width,
+            //            child: Text('منظومة متكاملة نغطي جوانب رئيسية للتجارة من بينها دراسة السوق، والتوقعات المستقبلية، وميزانيات العملاء، والتجارة الإلكترونية، وخدمات التوصيل',
+            //                   style: TextStyles.font12DarkBlueRegular,
+            //                   textAlign: TextAlign.center,
+            //                 ),
+            //          ),
+            //       ),
+            // ] 
+            //  ), 
             ),
           );
   }
@@ -44,9 +43,9 @@ class BannerShapeClipper extends CustomClipper<Path> {
     path.quadraticBezierTo(
        // Further adjusted control point Y for more height on the right
       size.width * 0.5, // Control point X
-      size.height - 100.h,
+      size.height - 10.h,
       size.width, // Control point X
-      size.height- 130.h,// End point Y
+      size.height- 13.h,// End point Y
     );
     //  path.lineTo(size.width, 0); 
     path.lineTo(size.width, size.height); 
